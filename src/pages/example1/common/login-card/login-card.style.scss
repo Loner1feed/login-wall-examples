@@ -1,0 +1,17 @@
+.login {
+  &-card {
+    max-width: 500px;
+    margin: 0px auto;
+    background: rgba($color: #ffffff, $alpha: 0.8);
+    text-align-last: left;
+  }
+  &-btn {
+    margin-bottom: 0;
+    & button {
+      background-color: #B784B7;
+      &:hover {
+        background-color: #8E7AB5 !important;
+      }
+    }
+  }
+}
