@@ -43,6 +43,10 @@ const Example1 = () => {
 
   useEffect(() => {
     document.querySelector('.content').addEventListener('wheel', preventScroll);
+
+    return () => {
+      document.removeEventListener("wheel", preventScroll);
+    }
   }, []);
 
   return (

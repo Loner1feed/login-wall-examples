@@ -33,6 +33,10 @@ const Example2 = () => {
     setOpen(false);
     setModalBlocked(true);
   }
+
+  // useEffect(() => {
+  //   document.querySelector('.content').removeEventListener('wheel');
+  // }, []);
   
   useEffect(() => {
     isVisible && !modalBlocked && setOpen(true);
@@ -41,7 +45,7 @@ const Example2 = () => {
   return (
     <>
       {contextHolder}
-      <div className='content'>
+      <div className='content2'>
         {colors.map((el, i) => (
           <ContentBlock key={i} id={`block-${i}`} title={`Block ${i + 1} title`} customStyles={{ ...generateBlockStyles(el) }}>
             <p>some content i can display</p>
